@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlando Woodworking | Custom Feature Walls & Planters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581447100595-3773199bfa4e?q=80&w=2070&auto=format&fit=crop'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        .text-accent { color: #8B5E3C; }
+        .bg-accent { background-color: #8B5E3C; }
+        html { scroll-behavior: smooth; }
+        
+        /* Fixed Header Height */
+        .nav-height { min-height: 140px; }
+        @media (min-width: 768px) { .nav-height { min-height: 180px; } }
+
+        /* Refined Logo Nudge: Shifted Up 5% from previous version */
+        .logo-nudge { margin-top: 10px; }
+        @media (min-width: 768px) { .logo-nudge { margin-top: 18px; } }
+
+        .project-img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+        .project-img-tall {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-white text-black antialiased">
+
+    <nav class="nav-height border-b border-gray-100 bg-white sticky top-0 z-50 shadow-sm px-4 flex items-center">
+        <div class="flex justify-between items-center w-full max-w-7xl mx-auto">
+            
+            <div class="flex items-center logo-nudge">
+                <a href="#" class="flex items-center">
+                    <img src="https://iili.io/qKsPi41.png" alt="Logo" class="h-28 md:h-52 w-auto object-contain">
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-4 sm:space-x-8 md:space-x-20 text-[11px] md:text-sm font-bold uppercase tracking-[0.25em] text-gray-600">
+                <a href="#planters" class="hover:text-accent transition-colors">Planters</a>
+                <a href="#walls" class="hover:text-accent transition-colors">Walls</a>
+            </div>
+            
+            <div class="flex items-center">
+                <a href="#quote" class="bg-accent text-white px-3 py-1 md:px-4 md:py-1.5 rounded-full font-extrabold uppercase tracking-tighter text-[7px] md:text-[9px] hover:bg-black transition shadow-sm">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-[40vh] md:h-[50vh] flex items-center justify-center text-center text-white hero-gradient px-4">
+        <div>
+            <h1 class="text-4xl md:text-7xl font-bold mb-4 tracking-tight uppercase leading-tight">Handcrafted <br>Woodworking</h1>
+            <p class="text-lg md:text-xl font-light mb-8 opacity-90 italic">Winter Garden's Premium Feature Walls & Planters</p>
+        </div>
+    </header>
+
+    <section class="py-12 md:py-32 px-4 md:px-10 max-w-[1600px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 lg:gap-32">
+            
+            <div id="planters" class="space-y-6 md:space-y-10 scroll-mt-52">
+                <div class="max-w-xl">
+                    <h4 class="text-3xl md:text-5xl font-bold uppercase tracking-tighter border-l-8 border-accent pl-6">Planters</h4>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed mt-4">Built for the Florida climate using Pressure-Treated Wood or Premium Cedar. Custom sizes for any outdoor space.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-3 md:gap-6">
+                    <img src="https://iili.io/qKsyMss.md.png" class="project-img border border-gray-100 rounded shadow-md">
+                    <img src="https://iili.io/qKsyGXn.md.jpg" class="project-img border border-gray-100 rounded shadow-md">
+                    <img src="https://iili.io/qKsyEzX.md.jpg" class="project-img border border-gray-100 rounded shadow-md">
+                    <img src="https://iili.io/qKsy0bt.md.jpg" class="project-img border border-gray-100 rounded shadow-md">
+                </div>
+            </div>
+
+            <div id="walls" class="space-y-6 md:space-y-10 scroll-mt-52">
+                <div class="max-w-xl">
+                    <h4 class="text-3xl md:text-5xl font-bold uppercase tracking-tighter border-l-8 border-accent pl-6">Walls</h4>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed mt-4">Modern slat walls and geometric patterns to transform any interior focal point into a work of art.</p>
+                </div>
+                <div class="flex flex-col gap-3 md:gap-6">
+                    <img src="https://iili.io/qKmfUa2.md.jpg" class="project-img-tall border border-gray-100 rounded shadow-md">
+                    <div class="grid grid-cols-2 gap-3 md:gap-6">
+                        <img src="https://iili.io/qKmfS3l.md.jpg" class="project-img border border-gray-100 rounded shadow-md">
+                        <img src="https://iili.io/qKmfv44.md.jpg" class="project-img border border-gray-100 rounded shadow-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-stone-50 py-24 px-6 border-y border-stone-200">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center text-3xl md:text-5xl font-bold uppercase mb-16 tracking-tighter">The Process</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center space-y-4">
+                    <div class="text-5xl font-bold text-accent opacity-20 italic">01</div>
+                    <h3 class="text-xl font-bold uppercase">Consult & Quote</h3>
+                    <p class="text-gray-600">Send over your dimensions and project type. We'll discuss material choices and provide a clear, upfront estimate.</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <div class="text-5xl font-bold text-accent opacity-20 italic">02</div>
+                    <h3 class="text-xl font-bold uppercase">Handcrafted Build</h3>
+                    <p class="text-gray-600">Each piece is custom-built with precision in our shop, ensuring heavy-duty construction that lasts for years.</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <div class="text-5xl font-bold text-accent opacity-20 italic">03</div>
+                    <h3 class="text-xl font-bold uppercase">Delivery & Install</h3>
+                    <p class="text-gray-600">We deliver your planters or professionally install your feature wall, leaving your space transformed and clean.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" class="bg-white py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-8 uppercase tracking-tighter">Start Your Project</h2>
+            <div class="bg-stone-50 p-8 md:p-16 border-t-8 border-accent shadow-2xl">
+                <a href="mailto:orlandowoodworking@yahoo.com?subject=Project%20Quote%20Request%20-%20Orlando%20Woodworking&body=Hi%20Orlando%20Woodworking,%0D%0A%0D%0AI'm%20interested%20in%20a%20custom%20woodworking%20project!%20Please%20see%20my%20details%20below:%0D%0A%0D%0A-%20Project%20Type%20(Planter%20or%20Wall):%0D%0A-%20Approximate%20Dimensions:%0D%0A-%20Wood/Finish%20Preference:%0D%0A-%20Your%20Location:%0D%0A%0D%0AThank%20you!" 
+                   class="inline-block w-full bg-accent text-white py-6 text-xl font-bold uppercase tracking-widest hover:bg-black transition">
+                    Send Email Request
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-12 md:space-y-0">
+            <div class="flex flex-col items-center md:items-start">
+                <img src="https://iili.io/qKsPi41.png" alt="Logo" class="h-28 w-auto mb-4 invert brightness-0">
+                <p class="opacity-40 text-[10px] tracking-[0.4em] uppercase">Winter Garden, FL</p>
+            </div>
+            <div class="flex flex-col items-center md:items-end space-y-2">
+                <p class="text-2xl md:text-4xl font-bold tracking-tighter">(901) 262-4213</p>
+                <a href="mailto:orlandowoodworking@yahoo.com" class="text-accent italic text-lg hover:text-white transition underline underline-offset-8 decoration-stone-800">orlandowoodworking@yahoo.com</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
