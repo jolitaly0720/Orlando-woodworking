@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlando Woodworking | Custom Feature Walls & Planters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1611082216831-721db7e10091?q=80&w=2000&auto=format&fit=crop'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        .logo-font { letter-spacing: -0.05em; }
+    </style>
+</head>
+<body class="bg-white text-black antialiased">
+
+    <nav class="flex justify-between items-center py-6 px-10 border-b border-gray-100">
+        <div class="text-2xl font-bold logo-font flex items-center">
+            <div class="border-2 border-black px-2 py-0.5 mr-2 flex items-center justify-center">
+               <span class="text-sm">O</span><span class="text-xs self-start opacity-50">+</span><span class="text-sm font-light uppercase">RL</span>
+            </div>
+            <span class="uppercase tracking-tighter">Woodworking</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-gray-500">
+            <a href="#walls" class="hover:text-black">Walls</a>
+            <a href="#planters" class="hover:text-black">Planters</a>
+            <a href="#quote" class="text-black border-b-2 border-black">Request Quote</a>
+        </div>
+    </nav>
+
+    <header class="relative h-[70vh] flex items-center justify-center text-center text-white hero-gradient px-4">
+        <div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">Handcrafted in <br>Winter Garden.</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 opacity-90 tracking-wide">Custom Feature Walls • Premium Planter Boxes</p>
+            <a href="#quote" class="bg-white text-black px-10 py-4 font-bold uppercase tracking-widest hover:bg-black hover:text-white transition duration-300">
+                Get a Quote
+            </a>
+        </div>
+    </header>
+
+    <section class="py-24 px-10 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-20">
+            <div id="walls" class="space-y-6">
+                <h4 class="text-3xl font-bold uppercase tracking-tighter border-l-4 border-black pl-4">Feature Walls</h4>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Transform your home with a high-end architectural statement. I specialize in custom wood accent walls—from modern vertical slats to intricate geometric patterns—designed and installed with precision.
+                </p>
+            </div>
+            
+            <div id="planters" class="space-y-6">
+                <h4 class="text-3xl font-bold uppercase tracking-tighter border-l-4 border-black pl-4">Planter Boxes</h4>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Professional-grade builds designed for Florida's climate. Available in <strong>Pressure-Treated Wood</strong> (natural, stained, or painted) or <strong>Premium Cedar</strong>.
+                </p>
+                <ul class="text-sm space-y-2 text-gray-800 font-medium">
+                    <li class="flex items-center">✓ Lined with professional landscaping fabric</li>
+                    <li class="flex items-center">✓ Custom sizing available</li>
+                    <li class="flex items-center">✓ Free delivery within 10 miles of Winter Garden</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" class="bg-gray-50 py-24 px-10">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4 tracking-tighter uppercase">Start Your Project</h2>
+            <p class="text-gray-500 mb-12">Click the button below to open your email and send me your project details. I'll respond with a quote within 24-48 hours.</p>
+            
+            <div class="bg-white p-10 border border-gray-200 shadow-sm">
+                <p class="text-left text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Quote Request Checklist:</p>
+                <ul class="text-left space-y-3 mb-10 text-gray-700">
+                    <li class="flex items-center italic">• Project Type (Wall or Planter)</li>
+                    <li class="flex items-center italic">• Approximate Dimensions</li>
+                    <li class="flex items-center italic">• Preferred Wood/Finish</li>
+                    <li class="flex items-center italic">• Your Delivery Address</li>
+                </ul>
+                
+                <a href="mailto:orlwoodwork@yahoo.com?subject=Quote%20Request%20-%20Orlando%20Woodworking&body=Hi%20Justin,%0D%0A%0D%0AI'm%20interested%20in%20a%20project!%20Please%20let%20me%20know%20your%20availability%20for:%0D%0A%0D%0A-%20Project%20Type:%0D%0A-%20Approximate%20Dimensions:%0D%0A-%20Wood/Finish%20Preference:%0D%0A-%20Delivery%20Address:" 
+                   class="inline-block w-full bg-black text-white py-5 text-lg font-bold uppercase tracking-[0.2em] hover:bg-gray-800 transition">
+                    Send Quote Request Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-16 px-10">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div>
+                <h2 class="text-2xl font-bold tracking-tighter mb-2 uppercase">Orlando Woodworking</h2>
+                <p class="opacity-50 text-sm italic">Winter Garden, FL • Justin</p>
+            </div>
+            <div class="mt-8 md:mt-0 text-left md:text-right">
+                <p class="text-xl font-bold">(901) 262-4213</p>
+                <p class="opacity-70 text-sm">orlwoodwork@yahoo.com</p>
+            </div>
+        </div>
+        <div class="mt-16 pt-8 border-t border-gray-900 text-center text-[10px] opacity-30 tracking-[0.3em] uppercase">
+            &copy; 2026 Orlando Woodworking
+        </div>
+    </footer>
+
+</body>
+</html>
